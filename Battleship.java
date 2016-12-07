@@ -27,7 +27,7 @@ public class Battleship{
    
     int x= -1;
     int y= -1;
-    while( x !=3 && y != 4 );
+    while( x !=3 && y != 4 ){
     
     //PROMPT THE USER TO PUT IN X AND Y LOCATION
     System.out.println("Enter in x and then y to place your first ship.");
@@ -49,7 +49,7 @@ public class Battleship{
     printBoard();
     
     //TO-DO: IN THE NEXT LINES OF CODE, ASK THE USER TO PLACE THE SECOND AND THIRD SHIPS
- 
+    }
     
     /*System.out.println("Enter in x and then y to place your second ship.");
    System.out.println("x: ");
