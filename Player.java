@@ -1,31 +1,36 @@
 public class Player{
+  //private String color;
+  private boolean win; 
+  private int ships; 
   
-  private int player1;
-  private int player2;
-  
-  
-  public Player(int newplayer1, int newplayer2){
-    
-    player1 = newPlayer1
-    player2 = newPlayer2
+  public Player(){
+    /*color = "red";
+    suit = "diamonds";
+    rank = 'A';*/
   }
-    
-}
-
-public int getPlayer1(){
+  public Player(boolean newWin, int newShips){
+    //color = newColor;
+    win = newWin;
+    ships = newShips;
+  }
+  /*public String getColor(){
+    return color;*/
   
- return player1;
-}
+  public boolean getWin(){
+    return win;
+  }
+  public void setWin(boolean newWin){
+    win = newWin;
+  }
+  public int getShips(){
+    return ships;
+  }
+  public void setShips(char newShips){
+    ships = newShips;
+  }
+ 
+  public String toString(){
+    return win + " " + ships; 
+  }
 
-public void setPlayer1(int newPlayer1){
-  player1 = newPlayer1;
-}
-
-public int getPlayer2(){
-  
-  return player2;
-}
-
-public void setPlayer2(int newPlayer2){
-  player2 = newPlayer2;
 }
