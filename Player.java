@@ -1,20 +1,38 @@
+//import java.util.List;
 public class Player{
-  //private String color;
+
   private boolean win; 
-  private int ships; 
+  private Ship ship;
   
   public Player(){
-    /*color = "red";
-    suit = "diamonds";
-    rank = 'A';*/
+   
   }
-  public Player(boolean newWin, int newShips){
-    //color = newColor;
+  public Player(boolean newWin){
+   
     win = newWin;
-    ships = newShips;
+    
+    int x1 = getRandomNumber(5,0);
+    int y1 = getRandomNumber(10,0);
+    int x2 = getRandomNumber(5,0);
+    int y2 = getRandomNumber(10,0);
+    
+    ship= new Ship( x1,y1,x2,y2);
+   
   }
-  /*public String getColor(){
-    return color;*/
+  
+  
+  public int getRandomNumber( int max, int min){
+    
+  //for x the range formula is (max - min) + 1
+   
+    int rangeX = (max - min) + 1;
+    
+return (int) (Math.random() * rangeX) + min;
+    
+   
+   
+  }
+   
   
   public boolean getWin(){
     return win;
@@ -22,15 +40,15 @@ public class Player{
   public void setWin(boolean newWin){
     win = newWin;
   }
-  public int getShips(){
-    return ships;
+  public Ship getShips(){
+    return ship;
   }
-  public void setShips(char newShips){
-    ships = newShips;
+  public void setShips(Ship newShips){
+    ship = newShips;
   }
  
   public String toString(){
-    return win + " " + ships; 
+    return win + " " + ship. toString(); 
   }
 
 }
