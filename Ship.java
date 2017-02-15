@@ -16,39 +16,39 @@ public class Ship{
   }
   
   //getters and setters
-  public int getX1(){
+  public int getx1(){
     return x1;
   }
   
-  public void setX1(int newX1){
-    x1 = newX1;
+  public void setx1(int newx1){
+    x1 = newx1;
   }
   
-  public int getY1(){
+  public int gety1(){
      return y1;
   }
   
-  public void setY1(int newY1){
+  public void sety1(int newy1){
     
-    y1 = newY1;
+    y1 = newy1;
   }
   
-  public int getX2(){
+  public int getx2(){
       return x2;
     
   }
-  public void setX2(int newX2){
+  public void setx2(int newx2){
    
-    x2 = newX2;
+    x2 = newx2;
   }
   
-  public int getY2(){
+  public int gety2(){
    
     return y2;
-  }
+  }                                                             
   
-  public void setY2(int newY2){
-    y2 = newY2;
+  public void sety2(int newy2){
+    y2 = newy2;
   }
   
   //toString method - output for your object

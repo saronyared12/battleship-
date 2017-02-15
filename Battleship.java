@@ -20,7 +20,7 @@ public class Battleship{
     
   }
   
-  public void placeShips(int x, int y){
+  public void placeShip(int x, int y){
 
     ships[x][y] = 'x';
   }
